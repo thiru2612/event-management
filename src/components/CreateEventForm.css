@@ -1,0 +1,13 @@
+/* .create-event {
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  background:white;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #e6eefc;
+}
+.create-event input, .create-event textarea {
+  padding:10px; border-radius:8px; border:1px solid #e5e7eb; font-size:14px;
+}
+.create-event textarea { min-height:80px; resize:vertical; } */

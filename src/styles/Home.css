@@ -1,0 +1,51 @@
+/* src/styles/Home.css */
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1525182008055-f88b95ff7980");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+.overlay {
+  text-align: center;
+  background-color: rgba(0, 51, 102, 0.7);
+  padding: 3rem;
+  border-radius: 12px;
+  width: 80%;
+}
+.cta-btn {
+  background-color: #00bfff;
+  border: none;
+  padding: 12px 24px;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.about {
+  text-align: center;
+  padding: 3rem 0;
+  background: #f7f9fc;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-6px);
+}

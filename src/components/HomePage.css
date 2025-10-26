@@ -1,0 +1,63 @@
+/* src/styles/HomePage.css */
+.home-container {
+  padding: 40px;
+  background-color: #f9fafb;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.about-section,
+.services-section,
+.upcoming-section {
+  margin-bottom: 60px;
+}
+
+.about-section h2,
+.services-section h2,
+.upcoming-section h2 {
+  color: #1e3a8a;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.6;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.service-card {
+  background: white;
+  padding: 25px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.events-container {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+  display: inline-block;
+}
