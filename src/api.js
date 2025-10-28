@@ -16,7 +16,17 @@ instance.interceptors.request.use((config) => {
   return config;
 });
 
-export const getEvents = () => instance.get("/events");
+export const getEvents = (params = {}) => {
+  const queryParams = new URLSearchParams();
+  if (params.page !== undefined) queryParams.append('page', params.page);
+  if (params.size !== undefined) queryParams.append('size', params.size);
+  if (params.sortBy) queryParams.append('sortBy', params.sortBy);
+  if (params.sortDir) queryParams.append('sortDir', params.sortDir);
+  if (params.type) queryParams.append('type', params.type);
+  
+  const queryString = queryParams.toString();
+  return instance.get(`/events${queryString ? '?' + queryString : ''}`);
+};
 export const getEvent = (id) => instance.get(`/events/${id}`);
 export const createEvent = (event) => instance.post("/events", event);
 export const rsvpToEvent = (id, attendee) =>
