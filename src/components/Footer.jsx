@@ -49,7 +49,7 @@ const Footer = () => (
         paddingTop: "1rem",
         width: "100%"
       }}>
-        © 2024 Event2Way. All rights reserved. Built with modern web technologies.
+        © 2025 Event2Way. All rights reserved. Built with modern web technologies.
       </div>
     </div>
   </footer>
